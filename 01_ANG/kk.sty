@@ -1,0 +1,44 @@
+% Konfiguracja polskich znaków i języka
+\usepackage[T1]{fontenc}          % Poprawne kodowanie czcionek, ważne dla polskich znaków
+\usepackage[utf8]{inputenc}       % Umożliwia wpisywanie znaków UTF-8, np. ą, ę, ć
+\usepackage[polish]{babel}        % Ustawia język labeli Przykład: engilsh -> figure polish -> rysunek
+\usepackage{indentfirst}           % Wcięcie pierwszego akapitu po nagłówku
+\usepackage{hyperref}              % Tworzy klikalne linki, spis treści i odnośniki
+\usepackage[nameinlink]{cleveref}  % Inteligentne odwołania, np. \cref{sec:test} → "sekcja 1"
+
+\usepackage[left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm]{geometry} % Ustawia marginesy strony
+\usepackage{graphicx}              % Umożliwia dodawanie i skalowanie obrazów
+\graphicspath{ {./images/} }
+\usepackage{booktabs}
+\usepackage{pdflscape}
+\usepackage{longtable}
+\usepackage{makecell}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{pdflscape}
+\usepackage{ltablex}
+\usepackage{caption}
+\usepackage{fancyhdr}
+\pagestyle{fancy}     % Ustawienie stylu strony na "fancy"
+\fancyhf{}            % Wyczyszczenie domyślnych nagłówków i stopek
+% Konfiguracja nagłówka:
+\fancyhead[L]{\includegraphics[scale=0.1]{Wiran_Logo}}
+\setlength{\headsep}{2cm} %Ustawienie odległości od nagłówka
+
+% Ręczne zdefiniowanie polskich nazw dla figur (obrazków)
+\crefname{figure}{Fig.}{Fig.}
+\Crefname{figure}{Figure}{Figures}
+
+% Usunięcie podziału wyrazów
+\tolerance=1 
+\emergencystretch=\maxdimen 
+\hyphenpenalty=10000 
+\hbadness=10000
+
+% Własny header do landscape
+\usepackage{fancyhdr}
+\usepackage{pdflscape}
+
+\usepackage{fancyhdr}
+\usepackage{pdflscape}
+
